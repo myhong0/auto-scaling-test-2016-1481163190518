@@ -1,0 +1,11 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: auto-scaling-test-2016
+  host: auto-scaling-test-2016
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  - Auto-Scaling-me
